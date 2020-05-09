@@ -1,3 +1,8 @@
+Citizen.CreateThread(function()
+	SetMapName(Config.MapName)
+	SetGameType(Config.GameTypeName)
+end)
+
 RegisterNetEvent('esx:onPlayerJoined')
 AddEventHandler('esx:onPlayerJoined', function()
 	if not ESX.Players[source] then
